@@ -33,7 +33,7 @@ export const UserDropdown = ({ user }: UserDropdownProps) => {
             <AvatarImage src={user.image ?? ""} />
             <AvatarFallback>{initials}</AvatarFallback>
           </Avatar>
-          <p>user.name</p>
+          <p>{user.name}</p>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="center" className="w-[var(--radix-dropdown-menu-trigger-width)]">

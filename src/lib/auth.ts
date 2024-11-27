@@ -9,7 +9,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     signIn: "/auth/login",
   },
   callbacks: {
-    authorized: async (auth) => {
+    authorized: async ({ auth }) => {
       return !!auth;
     }
   }
