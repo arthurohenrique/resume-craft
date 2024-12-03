@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: false,
-    basePath: '/teste/',
+    basePath: 'resume-craft/',
     webpack(config) {
         const fileLoaderRule = config.module.rules.find((rule) =>
           rule.test?.test?.(".svg")
